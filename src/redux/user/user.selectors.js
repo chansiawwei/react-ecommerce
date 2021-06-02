@@ -1,10 +1,8 @@
-import {createSelector} from 'reselect'
-
-//Memoize Function on Reducer
+import { createSelector } from 'reselect';
 
 const selectUser = state => state.user;
 
 export const selectCurrentUser = createSelector(
-    [selectUser],
-    user => user.currentUser
-)
+  [selectUser],
+  user => user.currentUser
+);
